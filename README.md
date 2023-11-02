@@ -1,6 +1,6 @@
 
-<h1>A Quiz-Math</h1>
-<p>Olá! Este é um jogo de perguntas e respostas envolvendo algumas áreas da matemática básica. O mesmo foi feito como projeto escolar</p>
+<h1>Quiz-Descritores SAEPE e SAEB</h1>
+<p>Olá! Este é um jogo de perguntas e respostas envolvendo questões de interpretação de texto, sendo uma variação do Quiz-Math feito anteriomente</p>
 
 <h2>Tecnologias utilizadas</h2>
 <div>
