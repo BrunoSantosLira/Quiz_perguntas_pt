@@ -1,13 +1,38 @@
 {
-    "pergunta1":{
+    "perguntas": [
+    {
         "numQuestao"   : 0,
-        "pergunta"     : "Pergunta",
-        "alternativaA" : "Alternativa A",
-        "alternativaB" : "Alternativa B",
-        "alternativaC" : "Alternativa C",
-        "alternativaD" : "Alternativa D",
-        "alternativaE" : "Alternativa E",
-        "correta"      : "0"
+        "titulo"       : "A antiga Roma ressurge em cada detalhe",
+        "pergunta"     : "Dos 20.000 habitantes de Pompéia, só dois escaparam da fulminante erupção do vulcão Vesúvio em 24 de agosto de 79 d.C. Varrida do mapa em horas, a cidade só foi encontrada em 1748, debaixo de 6 metros de cinzas. Por ironia, a catástrofe salvou Pompéia dos conquistadores epreservou-a para o futuro, como uma jóia arqueológica. Para quem já esteve lá, a visita é inesquecível.A profusão de dados sobre a cidade permitiu ao Laboratório de Realidade Virtual Avançada da Universidade Carnegie Mellon, nos Estados Unidos, criar imagens minuciosas, com apoio do instituto Americano de Arqueologia. Milhares dedetalhes arquitetônicos tornaram-se visíveis. As imagens mostram até que nas casas dos ricos secomia pão branco, de farinha de trigo, enquanto na dos pobres comia-se pão preto, de centeio.Outro megaprojeto, para ser concluído em 2020, da Universidade da Califórnia, trata darestauração virtual da história de Roma, desde os primeiros habitantes, no século XV a.C., até adecadência, no século V. Guias turísticos virtuais conduzirão o visitante por paisagens animadas por figurantes. Edifícios, monumentos, ruas,aquedutos, termas e sepulturas desfilarão,interativamente. Será possível percorrer vinte séculos da história num dia. E ver com os próprios olhos tudo aquilo que a literatura esforçou-se para contar com palavras.",
+        "pergunta2"    : "A finalidade principal do texto é",
+        "alternativaA" : "A)convencer.",
+        "alternativaB" : "B)relatar.",
+        "alternativaC" : "C)descrever.",
+        "alternativaD" : "D)informar.",
+        "correta"      : 4
+    },
+    {
+        "numQuestao"   : 1,
+        "titulo"       : "Como opera a máfia que transformou o Brasil num dos campeões da fraude de medicamentos",
+        "pergunta"     : "É um dos piores crimes que se podem cometer. As vítimas são homens, mulheres e crianças doentes — presas fáceis, capturadas na esperança de recuperar a saúde perdida. A máfia dos medicamentos falsos é mais cruel do que as quadrilhas de narcotraficantes. Quando alguém decide cheirar cocaína, tem absoluta consciência do que coloca no corpo adentro. Às vítimas dos que falsificam remédios não é dada oportunidade de escolha. Para o doente, o remédio é compulsório. Ou ele toma o que o médico lhe receitou ou passará a correr risco de piorar ou até morrer. Nunca como hoje os brasileiros entraram numa farmácia com tanta reserva.",
+        "pergunta2"    : "Segundo a autora, “um dos piores crimes que se podem cometer” é:",
+        "alternativaA" : "(A) a venda de narcóticos.",
+        "alternativaB" : "(B) a falsificação dos remédios.",
+        "alternativaC" : "(C) a receita de remédios falsos.",
+        "alternativaD" : "(D) a venda abusiva de remédios.",
+        "correta"      : 2
+    },
+    {
+        "numQuestao"   : 2,
+        "titulo"       : "Realidade com muita fantasia",
+        "pergunta"     : "Realidade com muita fantasia Nascido em 1937, o gaúcho Moacyr Scliar é um homem versátil: médico e escritor, igualmente atuante nas duas áreas. Dono de uma obra literária  extensa, é ainda um biógrafo de mão cheia e colaborador assíduo de diversos jornais brasileiros. Seus livros para jovens e adultos são sucesso de público e de crítica e alguns já foram publicados no exterior. Muito atento às situações-limite que desagradam à vida humana, Scliar combina em seus textos indícios de uma realidade bastante concreta com cenas absolutamente fantásticas. A convivência entre realismo e fantasia é harmoniosa e dela nascem os desfechos surpreendentes das histórias. Em sua obra, são freqüentes questões de identidade judaica, do cotidiano da medicina e do mundo da mídia, como, por exemplo, acontece no conto “O dia em que matamos James Cagney”.",
+        "pergunta2"    : "A expressão sublinhada em “é ainda um biógrafo de mão cheia” (ℓ. 2) e (ℓ. 3) significa que Scliar é",
+        "alternativaA" : "(A) crítico e detalhista.",
+        "alternativaB" : "(B) criativo e inconseqüente.",
+        "alternativaC" : "(C) habilidoso e talentoso.",
+        "alternativaD" : "(D) inteligente e ultrapassado.",
+        "correta"      : 3
     }
 
+]
 }

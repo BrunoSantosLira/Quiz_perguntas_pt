@@ -33,7 +33,14 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-    <body onload="verificar()">
+<audio id="meuAudio">
+    <source src="positive.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="meuAudioNegative">
+    <source src="negative.mp3" type="audio/mpeg">
+</audio>
+    <body>
         
         <article class="d-flex flex-column container mt-5" >
             
@@ -50,50 +57,22 @@
                 </div>
 
                 <p>
+                    <h5 id="tituloPergunta">aaa</h5>
                     <h3 id="pergunta" class="mb-5">
-                        <p>A antiga Roma ressurge em cada detalhe</p>
-                        Dos 20.000 habitantes de Pompéia, só dois
-                        escaparam da fulminante erupção do vulcão
-                        Vesúvio em 24 de agosto de 79 d.C. Varrida do
-                        mapa em horas, a cidade só foi encontrada em
-                        1748, debaixo de 6 metros de cinzas. Por ironia, a
-                        catástrofe salvou Pompéia dos conquistadores e
-                        preservou-a para o futuro, como uma jóia
-                        arqueológica. Para quem já esteve lá, a visita é
-                        inesquecível.
-                        A profusão de dados sobre a cidade permitiu
-                        ao Laboratório de Realidade Virtual Avançada da
-                        Universidade Carnegie Mellon, nos Estados
-                        Unidos, criar imagens minuciosas, com apoio do
-                        instituto Americano de Arqueologia. Milhares de
-                        detalhes arquitetônicos tornaram-se visíveis. As
-                        imagens mostram até que nas casas dos ricos se
-                        comia pão branco, de farinha de trigo, enquanto
-                        na dos pobres comia-se pão preto, de centeio.
-                        Outro megaprojeto, para ser concluído em
-                        2020, da Universidade da Califórnia, trata da
-                        restauração virtual da história de Roma, desde os
-                        primeiros habitantes, no século XV a.C., até a
-                        decadência, no século V. Guias turísticos virtuais
-                        conduzirão o visitante por paisagens animadas
-                        por figurantes. Edifícios, monumentos, ruas,
-                        aquedutos, termas e sepulturas desfilarão,
-                        interativamente. Será possível percorrer vinte
-                        séculos da história num dia. E ver com os próprios
-                        olhos tudo aquilo que a literatura esforçou-se para
-                        contar com palavras.
+                     
+                        
                     </h3>
                 </p>
                 
-                <h2 style="color: white; font-size: 20px;" id="selecione_resposta">
-                    A finalidade principal do texto é
+                <h2 style="color: white; font-size: 20px;" id="pergunta2">
+             
                 </h2>
                 <div id="caixa_alternativas">
                     <ul>
-                        <li>A)convencer.</li>
-                        <li>B)relatar.</li>
-                        <li>C)descrever.</li>
-                        <li>D)informar.</li>
+                        <li value="1A" id="AlterA" onclick="verificarResposta(this)"></li>
+                        <li value="2B" id="AlterB" onclick="verificarResposta(this)"></li>
+                        <li value="3C" id="AlterC" onclick="verificarResposta(this)"></li>
+                        <li value="4D" id="AlterD" onclick="verificarResposta(this)"></li>
                     </ul>
                 </div>
                 <div id="resultado" class="text-center font-weight-bold ">

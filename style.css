@@ -15,8 +15,12 @@ ul li{
     text-align: center;
     background-color: #F0F0F0;
     margin-top: 0.5rem;
-    border: 1px solid red;
+    cursor: pointer;
 
+}
+
+ul li:hover{
+    background-color: rgb(150, 150, 215);
 }
 
 #leiaQuestao{
