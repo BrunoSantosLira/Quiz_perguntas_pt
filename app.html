@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+
+    <!-- CDN Bootstrap 4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+
+    <!--Fonte Montserrat + links google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+
+    <!-- Fonte Press Start 2P-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <!--Jquery + BootStrap 4-->
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Link do arquivo CSS-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    <body onload="verificar()">
+        
+        <article class="d-flex flex-column container mt-5" >
+            
+            <div class="item align-self-center p-5 " id="caixa">
+                <div>
+                    <a href="index.html" id="link_superior"> <i class="fa-solid fa-house fa-2xl"></i> </a>
+                    
+                    <div id="badges">
+
+                    </div>
+                    <div id="badges_pergunta">
+
+                    </div>
+                </div>
+
+                <p>
+                    <h3 id="pergunta" class="mb-5">
+                        <p>A antiga Roma ressurge em cada detalhe</p>
+                        Dos 20.000 habitantes de Pompéia, só dois
+                        escaparam da fulminante erupção do vulcão
+                        Vesúvio em 24 de agosto de 79 d.C. Varrida do
+                        mapa em horas, a cidade só foi encontrada em
+                        1748, debaixo de 6 metros de cinzas. Por ironia, a
+                        catástrofe salvou Pompéia dos conquistadores e
+                        preservou-a para o futuro, como uma jóia
+                        arqueológica. Para quem já esteve lá, a visita é
+                        inesquecível.
+                        A profusão de dados sobre a cidade permitiu
+                        ao Laboratório de Realidade Virtual Avançada da
+                        Universidade Carnegie Mellon, nos Estados
+                        Unidos, criar imagens minuciosas, com apoio do
+                        instituto Americano de Arqueologia. Milhares de
+                        detalhes arquitetônicos tornaram-se visíveis. As
+                        imagens mostram até que nas casas dos ricos se
+                        comia pão branco, de farinha de trigo, enquanto
+                        na dos pobres comia-se pão preto, de centeio.
+                        Outro megaprojeto, para ser concluído em
+                        2020, da Universidade da Califórnia, trata da
+                        restauração virtual da história de Roma, desde os
+                        primeiros habitantes, no século XV a.C., até a
+                        decadência, no século V. Guias turísticos virtuais
+                        conduzirão o visitante por paisagens animadas
+                        por figurantes. Edifícios, monumentos, ruas,
+                        aquedutos, termas e sepulturas desfilarão,
+                        interativamente. Será possível percorrer vinte
+                        séculos da história num dia. E ver com os próprios
+                        olhos tudo aquilo que a literatura esforçou-se para
+                        contar com palavras.
+                    </h3>
+                </p>
+                
+                <h2 style="color: white; font-size: 20px;" id="selecione_resposta">
+                    A finalidade principal do texto é
+                </h2>
+                <div id="caixa_alternativas">
+                    <ul>
+                        <li>A)convencer.</li>
+                        <li>B)relatar.</li>
+                        <li>C)descrever.</li>
+                        <li>D)informar.</li>
+                    </ul>
+                </div>
+                <div id="resultado" class="text-center font-weight-bold ">
+                   
+                </div>
+
+                <div id="prox_pergunta" class="text-center mt-2">
+    
+                </div>
+
+            </div>
+  
+           
+        </article>
+
+    <script src="script.js"></script>
+    </body>
+</html>

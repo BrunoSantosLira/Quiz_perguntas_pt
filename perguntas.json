@@ -1,10 +1,13 @@
 {
     "pergunta1":{
-        "enunciado": "....",
-        "ALTERNATIVA 1": "A",
-        "ALTERNATIVA 2": "B",
-        "ALTERNATIVA 3": "C",
-        "ALTERNATIVA 4": "D",
-        "ALTERNATIVA 5": "E"
+        "numQuestao"   : 0,
+        "pergunta"     : "Pergunta",
+        "alternativaA" : "Alternativa A",
+        "alternativaB" : "Alternativa B",
+        "alternativaC" : "Alternativa C",
+        "alternativaD" : "Alternativa D",
+        "alternativaE" : "Alternativa E",
+        "correta"      : "0"
     }
+
 }

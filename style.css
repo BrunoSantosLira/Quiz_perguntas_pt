@@ -1,0 +1,100 @@
+body{
+    background-color: #DDFEFE;
+}
+
+
+a:hover{
+    font-size: 20px;
+}
+#voltar:hover{
+    font-size: 40px;
+}
+
+ul li{
+    padding: 0.8rem;
+    text-align: center;
+    background-color: #F0F0F0;
+    margin-top: 0.5rem;
+    border: 1px solid red;
+
+}
+
+#leiaQuestao{
+    margin-top: 1rem;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    background-color: #8e18c9;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px #134deb;
+}
+
+/* Estilo para os botões */
+#btn0 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #52b823;
+    border: none;
+    cursor: pointer;
+}
+
+#btn1 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #f2df0d;
+    border: none;
+    cursor: pointer;
+} 
+
+#btn2 {
+    margin: 5px;
+    padding: 10px;
+    background-color: #b03737;
+    border: none;
+    cursor: pointer;
+    color: white;
+} 
+  
+  /* Estilo para o botão selecionado */
+  button.selected {
+    background-color: #ffe608;
+  }
+
+  /*
+  #btn0, #btn1, #btn2 {
+     transition: background-color 0.3s, color 0.3s;
+  }
+  */
+
+  
+
+  #btn0:active, #btn1:active, #btn2:active  {
+    background-color: rgb(10, 157, 255);
+    color: white;
+  }
+
+
+#titulo{
+    color: white;
+    font-weight: bold;
+}
+
+#pergunta{
+    color: white;
+    font-size: 13px;
+}
+
+#resultado{
+    font-size: 30px;
+}
+
+#imagem{
+    align-self: center;
+    width: 120px;
+    height: 120px;
+}
+
+#caixa{
+    background-color: #5CCEEE;
+    border: green solid;
+    border-radius: 5px;
+}
