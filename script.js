@@ -47,6 +47,9 @@ function GerarPergunta(){
       
       let badgeNumeroPergunta = window.document.getElementById('badges_pergunta');
       badgeNumeroPergunta.innerHTML = `Pergunta: ${perguntaAtual.numQuestao + 1} de 10`
+
+      let NumPergunta = window.document.getElementById('NumPergunta');
+      NumPergunta.innerHTML = perguntaAtual.numQuestao + 1
       
       }
 
