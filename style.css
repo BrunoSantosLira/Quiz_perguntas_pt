@@ -10,6 +10,7 @@ a:hover{
     font-size: 40px;
 }
 
+
 ul li{
     padding: 0.8rem;
     text-align: center;
@@ -25,7 +26,7 @@ ul li:hover{
 
 #leiaQuestao{
     margin-top: 1rem;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: rgb(255, 255, 255);
     background-color: #8e18c9;
     border-radius: 0.5rem;

@@ -1,5 +1,6 @@
 GerarPergunta();
 let contadorPerguntas= 0
+let qtdePontos = 0
 
 function GerarPergunta(){
   fetch("http://127.0.0.1:5500/perguntas.json")
@@ -11,6 +12,7 @@ function GerarPergunta(){
   })
   .then(data => {
     // Manipule os dados da resposta aqui
+    
    preencherPerguntar(data);
     
   })
@@ -18,25 +20,32 @@ function GerarPergunta(){
   function preencherPerguntar(perguntas){
     let perguntaAtual = perguntas.perguntas[contadorPerguntas]
     console.log(perguntas.perguntas);
+    console.log('PERGUNTA ATUAL:', contadorPerguntas);
+    console.log('TAMANHO DA LISTA:',perguntas.perguntas.length)
 
-    let tituloPergunta = window.document.getElementById('tituloPergunta');
-    tituloPergunta.innerHTML = perguntaAtual['titulo']
+    if(contadorPerguntas == perguntas.perguntas.length){
+      gerarFinal();
+    }else{
+      let tituloPergunta = window.document.getElementById('tituloPergunta');
+      tituloPergunta.innerHTML = perguntaAtual['titulo']
 
-    let perguntaTexto = window.document.getElementById('pergunta');
-    perguntaTexto.innerHTML = perguntaAtual.pergunta;
+      let perguntaTexto = window.document.getElementById('pergunta');
+      perguntaTexto.innerHTML = perguntaAtual.pergunta;
 
-    let pergunta2 = window.document.getElementById('pergunta2');
-    pergunta2.innerHTML = perguntaAtual.pergunta2;
-    //ALTERNATIVAS
-    let AlterA = window.document.getElementById('AlterA');
-    let AlterB = window.document.getElementById('AlterB');
-    let AlterC = window.document.getElementById('AlterC');
-    let AlterD= window.document.getElementById('AlterD');
+      let pergunta2 = window.document.getElementById('pergunta2');
+      pergunta2.innerHTML = perguntaAtual.pergunta2;
+      //ALTERNATIVAS
+      let AlterA = window.document.getElementById('AlterA');
+      let AlterB = window.document.getElementById('AlterB');
+      let AlterC = window.document.getElementById('AlterC');
+      let AlterD= window.document.getElementById('AlterD');
 
-    AlterA.innerHTML = perguntaAtual.alternativaA
-    AlterB.innerHTML = perguntaAtual.alternativaB
-    AlterC.innerHTML = perguntaAtual.alternativaC
-    AlterD.innerHTML = perguntaAtual.alternativaD
+      AlterA.innerHTML = perguntaAtual.alternativaA
+      AlterB.innerHTML = perguntaAtual.alternativaB
+      AlterC.innerHTML = perguntaAtual.alternativaC
+      AlterD.innerHTML = perguntaAtual.alternativaD
+      }
+
   }
 
 function verificarResposta(event){
@@ -68,16 +77,45 @@ function verificarResposta(event){
   })
 }
 
+function gerarFinal(){
+      let tituloPergunta = window.document.getElementById('tituloPergunta');
+      tituloPergunta.innerHTML = `Fim de Jogo! Você conseguiu ${qtdePontos} pontos`
+      tituloPergunta.style.backgroundColor = '#07EDC8'
+      tituloPergunta.style.boxShadow = '0px 0px 15px #134deb'
+      tituloPergunta.style.borderRadius = '1rem';
+      tituloPergunta.style.padding = '1rem';
+
+      let caixa = window.document.getElementById('caixa');
+      caixa.style.backgroundColor = 'none'
+      
+
+      let perguntaTexto = window.document.getElementById('pergunta');
+      perguntaTexto.innerHTML = '<p class="text-center">Redirecionando para a página principal...</p>'
+
+      let pergunta2 = window.document.getElementById('pergunta2');
+      pergunta2.innerHTML = ''
+      //ALTERNATIVAS
+      let Alternativas = window.document.getElementById('caixa_alternativas');
+      Alternativas.innerHTML = ''
+      
+      setTimeout(() => {
+        window.location = 'index.html'
+      }, 8000);
+}
+
 function resultadoCorreto(){
   var meuAudio = document.getElementById('meuAudio');
   meuAudio.play();
   contadorPerguntas++
   GerarPergunta();
   console.log('RESPOSTA CORRETA');
+  qtdePontos += 10
 }
 
 function resultadoIncorreto(){
   var meuAudio = document.getElementById('meuAudioNegative');
   meuAudio.play();
+  contadorPerguntas++
+  GerarPergunta();
   console.log('RESPOSTA INCORRETA');
 }
