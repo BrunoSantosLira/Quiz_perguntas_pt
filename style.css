@@ -17,6 +17,7 @@ ul li{
     background-color: #F0F0F0;
     margin-top: 0.5rem;
     cursor: pointer;
+    list-style-type:upper-alpha;
 
 }
 
@@ -85,7 +86,8 @@ ul li:hover{
 
 #pergunta{
     color: white;
-    font-size: 13px;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 #resultado{

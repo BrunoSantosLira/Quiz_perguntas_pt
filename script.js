@@ -39,11 +39,15 @@ function GerarPergunta(){
       let AlterB = window.document.getElementById('AlterB');
       let AlterC = window.document.getElementById('AlterC');
       let AlterD= window.document.getElementById('AlterD');
-
+      
       AlterA.innerHTML = perguntaAtual.alternativaA
       AlterB.innerHTML = perguntaAtual.alternativaB
       AlterC.innerHTML = perguntaAtual.alternativaC
       AlterD.innerHTML = perguntaAtual.alternativaD
+      
+      let badgeNumeroPergunta = window.document.getElementById('badges_pergunta');
+      badgeNumeroPergunta.innerHTML = `Pergunta: ${perguntaAtual.numQuestao + 1} de 10`
+      
       }
 
   }
@@ -87,7 +91,11 @@ function gerarFinal(){
 
       let caixa = window.document.getElementById('caixa');
       caixa.style.backgroundColor = 'none'
+
+      let badgeNumeroPergunta = window.document.getElementById('badges_pergunta');
+      badgeNumeroPergunta.innerHTML = ''
       
+
 
       let perguntaTexto = window.document.getElementById('pergunta');
       perguntaTexto.innerHTML = '<p class="text-center">Redirecionando para a página principal...</p>'
