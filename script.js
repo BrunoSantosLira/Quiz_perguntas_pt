@@ -3,7 +3,7 @@ let contadorPerguntas= 0
 let qtdePontos = 0
 
 function GerarPergunta(){
-  fetch("http://127.0.0.1:5500/perguntas.json")
+  fetch("https://brunosantoslira.github.io/Quiz_perguntas_pt/perguntas.json")
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro na requisição HTTP');
@@ -50,7 +50,7 @@ function GerarPergunta(){
 
 function verificarResposta(event){
   let respostaSelecionada = event.value
-  fetch("http://127.0.0.1:5500/perguntas.json")
+  fetch("https://brunosantoslira.github.io/Quiz_perguntas_pt/perguntas.json")
   .then(response => {
     if (!response.ok) {
       throw new Error('Erro na requisição HTTP');
@@ -100,7 +100,7 @@ function gerarFinal(){
       
       setTimeout(() => {
         window.location = 'index.html'
-      }, 8000);
+      }, 6000);
 }
 
 function resultadoCorreto(){
